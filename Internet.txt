@@ -1,0 +1,17 @@
+Internet - 
+Interconnected network of Computers around the world.
+
+Server - device is always on and it also sends data through the Internet
+
+client - the device that asks the data and recives the data .
+
+Every computer has its own IP Address
+ 
+
+ client        ISP
+             (internet service provider)         DNS
+            ->                              ->
+ request     airtel , voda                       domain name return IP
+
+
+ nslookup.io -> website name to IP address 
