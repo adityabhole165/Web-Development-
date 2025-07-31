@@ -1,0 +1,19 @@
+Web Devlopment -
+
+Building the website for the internet 
+
+
+search website name 
+     |
+    \ /
+     v
+ request  amazon server    
+     |
+    \ /
+     v
+response to the browser 
+
+
+HTML - Structure
+CSS - Style
+js - functionality
