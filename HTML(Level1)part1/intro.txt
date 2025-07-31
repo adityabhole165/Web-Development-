@@ -1,0 +1,9 @@
+HTML - 
+Hyper text mark up language
+It tells the Structure and formatting
+
+Normal plain text  -> formated text
+
+What does html stand s formated
+- Hyper text mark up language 
+
