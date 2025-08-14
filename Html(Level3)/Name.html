@@ -1,0 +1,47 @@
+<!-- 
+Name Attribute -
+    Name of the from control . Submitted with the form as part of the name/value pair 
+
+    <input
+            type = "text"
+            placeholder = "enter name"
+            id = "username"
+            name = "username"
+    />
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+
+        <div>
+            <label for="username"> User Name</label>
+            <input type="text" id="username" placeholder="User Name " name="User
+            "/>
+        </div>
+        <br>
+        <div>
+            <label for="Password"> Password</label>
+            <input type="Password" id="Password" placeholder="Password" name="password"/>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results"> 
+        <br>
+        <input type="text" placeholder="Search on Youtube" 
+        name="search_query"/>
+        <br>
+        <br>
+        <button>Search</button>
+    </form>
+</body>
+</html>
