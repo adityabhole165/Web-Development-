@@ -8,20 +8,26 @@
 <body>
     <form action="/server">
          <h1>Registration form</h1>
-    <textarea name="first name" id="FName" placeholder="First Name"></textarea>
+ <div>
+       <textarea name="first name" id="FName" placeholder="First Name"></textarea>
     <textarea name="Last name" id="LName" placeholder="Last Name"></textarea>
+ </div>
     <br>
-    <label for="gendr"> Please select the Gender</label>
+   <div>
+     <label for="gendr"> Please select the Gender</label>
     <select name="gendr" id="gendr">
         <option value="Male">Male</option>
         <option value="Female">Female
 
         </option>
     </select>
+   </div>
     <br>
-    <label for="agreement">Do you agree to all terms of service ? </label>
+   <div>
+     <label for="agreement">Do you agree to all terms of service ? </label>
     <input type="checkbox" name="terms" id="terms"checked >
     <label for="t"> yes I agree</label>
+   </div>
     <br>
     <button>Register</button>
     </form>
