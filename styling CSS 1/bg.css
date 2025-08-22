@@ -1,0 +1,23 @@
+h1 {
+    background-color:#40826D ;
+    width: 10%;
+}
+
+h2 {
+    background-color:#FF7F50 ;
+    width: 20%;
+}
+
+p {
+    background-color: #F4C430;
+    width: 10%;
+}
+
+button {
+    background-color: #008080;
+    color: aliceblue;
+}
+
+body {
+    background-color: #DC143C;
+}
