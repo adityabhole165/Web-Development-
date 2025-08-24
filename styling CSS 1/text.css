@@ -1,11 +1,26 @@
 h1{
     text-align: center;
+    text-decoration:underline;
 }
 
 h2 {
     font-weight: normal;
+    text-decoration:line-through;
 }
 
 p {
     font-weight: 500;
+}
+
+h3 {
+        text-decoration:overline
+
+}
+
+h4 {
+    text-decoration: red underline;
+}
+
+div{
+    text-decoration: wavy overline;
 }
