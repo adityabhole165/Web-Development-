@@ -1,5 +1,4 @@
 h1{
-    text-transform: uppercase;
     font-family: League spartan;
     color: #35288e;
     text-align: center;
@@ -8,6 +7,7 @@ h1{
     font-size: 55px;
     line-height: normal;
     text-decoration: teal underline double;
+    text-transform: uppercase;
 
 
 }
