@@ -1,0 +1,47 @@
+/* Universal Selector - Selects all component in Document  */
+*{
+    font-family: Papyrus;
+    background-color: #fae3c1;
+    /* background-color: rgb(156, 243, 237); */
+}
+
+
+/* Element selector  - selects the element and assign css properties */
+h3{
+    color:#4f290d ;
+}
+
+h1{
+    color: #b92b27;
+}
+
+/* ID selector selects an element based on the value of the elements id attribute  */
+
+#login{
+    background-color: blue;
+    color: wheat;
+    font-weight: bold;
+    font-size: large;
+    border: 40 rgb(250, 246, 246);
+}
+
+#signup {
+    border: 40 black;
+    background-color: rgb(0, 255, 234);
+    color: rgb(11, 11, 11);
+    font-weight: bold ;
+    font-size: large;
+}
+
+/* class selector - selects element based on their class attribute. */
+.follow {
+    font-weight: bold ;
+    text-decoration: none;
+    color: #0486f0;
+    font-weight: bold;
+}
+
+.upvote {
+    font-weight: bold ;
+    background-color: rgb(15, 249, 15);
+}
