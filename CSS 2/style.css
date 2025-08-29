@@ -46,3 +46,9 @@ h1{
     font-weight: bold ;
     background-color: rgb(15, 249, 15);
 }
+
+/* Adjacent sibling */
+
+.upvote + button {
+    background-color: cornflowerblue;
+}
