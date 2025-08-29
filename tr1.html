@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Journey Tracker</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .neumorphic {
+            background: #e0e5ec;
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px #c5c9ce, -6px -6px 12px #fbfdff;
+        }
+        .neumorphic-inset {
+            background: #e0e5ec;
+            border-radius: 20px;
+            box-shadow: inset 6px 6px 12px #c5c9ce, inset -6px -6px 12px #fbfdff;
+        }
+        .neumorphic-button {
+            background: #e0e5ec;
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px #c5c9ce, -4px -4px 8px #fbfdff;
+            transition: all 0.2s ease-in-out;
+        }
+        .neumorphic-button:active {
+            box-shadow: inset 4px 4px 8px #c5c9ce, inset -4px -4px 8px #fbfdff;
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+        }
+        .disabled-button {
+            background: #d1d5db;
+            color: #9ca3af;
+            cursor: not-allowed;
+            box-shadow: inset 2px 2px 5px #b0b4b8, inset -2px -2px 5px #f0f4f8;
+        }
+        .hidden {
+            display: none;
+        }
+        .custom-checkbox {
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            background-color: #e0e5ec;
+            box-shadow: inset 2px 2px 4px #c5c9ce, inset -2px -2px 4px #fbfdff;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+        .custom-checkbox:checked {
+            background-color: #6ee7b7; /* green-300 */
+            box-shadow: inset 2px 2px 4px #5eead4, inset -2px -2px 4px #99f6e4;
+        }
+        .custom-checkbox:checked::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+        }
+        .message-modal {
+            background: #e0e5ec;
+            border-radius: 20px;
+            box-shadow: 6px 6px 12px #c5c9ce, -6px -6px 12px #fbfdff;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <div id="app" class="container bg-gray-100 min-h-screen p-6 rounded-3xl shadow-xl flex flex-col items-center text-gray-800">
+
+        <!-- Message Box -->
+        <div id="message-box" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center p-4 hidden">
+            <div class="message-modal rounded-xl p-6 text-center w-full max-w-sm relative">
+                <button id="close-message" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <h3 id="message-title" class="font-bold text-lg mb-2"></h3>
+                <p id="message-content" class="text-sm"></p>
+            </div>
+        </div>
+
+        <!-- Header and Character Dashboard -->
+        <div class="w-full flex flex-col items-center text-center p-4 mb-6">
+            <h1 class="text-3xl font-bold text-gray-800">Your Hero's Journey</h1>
+            <p class="text-sm text-gray-500 mt-1">Welcome, Hero of the Digital Realm!</p>
+            <div class="w-full mt-4 p-4 rounded-xl neumorphic text-left">
+                <h2 class="text-xl font-bold mb-2">Character Dashboard</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <span class="font-semibold text-gray-600">Current XP:</span>
+                        <div class="neumorphic-inset text-center py-2 rounded-lg mt-1"><span id="xp-counter" class="font-bold text-lg text-yellow-500">0</span></div>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-600">Current Level:</span>
+                        <div class="neumorphic-inset text-center py-2 rounded-lg mt-1"><span id="level-name" class="font-bold text-lg">Level 1 (Novice)</span></div>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="font-semibold text-gray-600">XP to Next Level:</span>
+                        <div class="neumorphic-inset text-center py-2 rounded-lg mt-1"><span id="xp-to-next" class="font-bold text-lg">500 XP</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Quests Section -->
+        <div class="mt-4 w-full p-4 rounded-xl neumorphic">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold">Daily Quests</h3>
+                <span id="date-display" class="text-sm text-gray-500"></span>
+            </div>
+            
+            <div id="quest-list" class="space-y-4">
+                <!-- Quests will be dynamically added here -->
+            </div>
+            
+            <button id="update-xp-button" class="neumorphic-button mt-6 w-full py-4 text-xl font-semibold text-gray-700 hover:glow-effect">
+                <i class="fa-solid fa-star mr-2"></i> Update Daily XP
+            </button>
+        </div>
+
+        <!-- Rewards Section -->
+        <div class="mt-8 w-full">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">Available Rewards</h3>
+                <button id="open-rewards-button" class="neumorphic-button px-4 py-2 rounded-xl text-sm font-medium">
+                    <i class="fa-solid fa-gem mr-2"></i>Rewards
+                </button>
+            </div>
+            <div id="rewards-list" class="space-y-3">
+                <!-- Rewards will be added here dynamically -->
+            </div>
+        </div>
+
+        <!-- Export to Sheets Button -->
+        <button id="export-button" class="neumorphic-button mt-8 w-full py-4 text-xl font-semibold text-gray-700 hover:glow-effect">
+            <i class="fa-solid fa-file-csv mr-2"></i> Export to CSV
+        </button>
+
+    </div>
+
+    <script>
+        // Get references to all necessary DOM elements
+        const app = document.getElementById('app');
+        const xpCounter = document.getElementById('xp-counter');
+        const levelName = document.getElementById('level-name');
+        const xpToNext = document.getElementById('xp-to-next');
+        const dateDisplay = document.getElementById('date-display');
+        const questListContainer = document.getElementById('quest-list');
+        const updateXpButton = document.getElementById('update-xp-button');
+        const openRewardsButton = document.getElementById('open-rewards-button');
+        const rewardsListContainer = document.getElementById('rewards-list');
+        const exportButton = document.getElementById('export-button');
+        const messageBox = document.getElementById('message-box');
+        const closeMessageButton = document.getElementById('close-message');
+        const messageTitle = document.getElementById('message-title');
+        const messageContent = document.getElementById('message-content');
+
+        // Define the app's state
+        const state = {
+            xp: 0,
+            level: 1,
+            levelTiers: {
+                1: { name: 'Novice', xpRequired: 500 },
+                2: { name: 'Apprentice', xpRequired: 1000 },
+                3: { name: 'Master', xpRequired: 2000 },
+                // Add more levels as needed
+            },
+            dailyQuests: [
+                { id: 'workout', name: 'Workout or walk', difficulty: 'Easy', xp: 10, completed: false },
+                { id: 'morning-meditation', name: '20 minutes of morning meditation', difficulty: 'Easy', xp: 10, completed: false },
+                { id: 'evening-meditation', name: '20 minutes of evening meditation', difficulty: 'Easy', xp: 10, completed: false },
+                { id: 'read-book', name: 'Read 5 pages of a book', difficulty: 'Easy', xp: 10, completed: false },
+                { id: 'study-finance', name: 'Study finance for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'aptitude-practice', name: 'Aptitude practice for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'interview-practice', name: 'Interview and talking practice for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'freelance-work', name: 'Freelance work for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'research', name: 'Research for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'cybersecurity', name: 'Cybersecurity for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'aiml-study', name: 'AIML study for 1 hour', difficulty: 'Medium', xp: 30, completed: false },
+                { id: 'java-dsa', name: 'Practice and solve Java DSA for 2 hours', difficulty: 'Hard', xp: 100, completed: false },
+                { id: 'java-concepts', name: 'Watch and learn Java Concepts for 2 hours', difficulty: 'Hard', xp: 100, completed: false },
+                { id: 'web-dev', name: 'Web Development for 2 hours', difficulty: 'Hard', xp: 100, completed: false },
+                { id: 'build-project', name: 'Build a Project using Java core or Web dev/MERN for 1 hour', difficulty: 'Hard', xp: 100, completed: false }
+            ],
+            rewards: [
+                { id: 'video-games', name: '30 minutes of video games', cost: 25, purchased: false },
+                { id: 'coffee-shop', name: 'New coffee shop drink', cost: 40, purchased: false },
+                { id: 'extra-tv', name: 'An extra hour of TV', cost: 100, purchased: false },
+                { id: 'takeout', name: 'Ordering takeout', cost: 150, purchased: false },
+                { id: 'new-gadget', name: 'Buying a new gadget', cost: 250, purchased: false },
+                { id: 'weekend-trip', name: 'A weekend trip', cost: 500, purchased: false }
+            ],
+            log: [], // Stores a history of daily logs
+        };
+
+        // --- Core Functions ---
+
+        /**
+         * Shows a custom message box with a title and content.
+         * @param {string} title The title of the message.
+         * @param {string} content The main content of the message.
+         */
+        function showMessage(title, content) {
+            messageTitle.textContent = title;
+            messageContent.textContent = content;
+            messageBox.classList.remove('hidden');
+        }
+
+        /**
+         * Renders all the UI elements based on the current application state.
+         * This function acts as a single source of truth for UI updates.
+         */
+        function renderUI() {
+            // Update Dashboard
+            xpCounter.textContent = state.xp;
+            levelName.textContent = state.levelTiers[state.level].name;
+            const nextLevelData = state.levelTiers[state.level + 1];
+            if (nextLevelData) {
+                xpToNext.textContent = `${nextLevelData.xpRequired - state.xp} XP to reach Level ${state.level + 1}`;
+            } else {
+                xpToNext.textContent = 'Max Level Reached!';
+            }
+            dateDisplay.textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+            // Render Quests
+            questListContainer.innerHTML = '';
+            state.dailyQuests.forEach(quest => {
+                const item = document.createElement('div');
+                item.className = 'p-4 rounded-xl neumorphic-inset flex items-center justify-between';
+                item.innerHTML = `
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="quest-${quest.id}" data-id="${quest.id}" class="custom-checkbox" ${quest.completed ? 'checked' : ''}>
+                        <label for="quest-${quest.id}" class="font-medium text-gray-700">${quest.name}</label>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-500">${quest.xp} XP</span>
+                `;
+                questListContainer.appendChild(item);
+            });
+
+            // Update Rewards
+            rewardsListContainer.innerHTML = '';
+            state.rewards.forEach(reward => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'p-4 rounded-xl neumorphic-button flex items-center justify-between';
+                const buttonClasses = `claim-button px-4 py-2 rounded-lg text-sm text-white font-bold transition-all duration-200`;
+                const isClaimed = reward.purchased;
+                const canAfford = state.xp >= reward.cost;
+                const disabledClass = (!canAfford || isClaimed) ? 'disabled-button' : 'bg-green-500 hover:bg-green-600';
+                const buttonText = isClaimed ? 'Claimed!' : 'Claim';
+
+                itemDiv.innerHTML = `
+                    <div class="flex flex-col">
+                        <h4 class="font-bold text-gray-700">${reward.name}</h4>
+                        <div class="flex items-center text-yellow-500 font-bold mt-1">
+                            <i class="fa-solid fa-star mr-1"></i>
+                            <span>${reward.cost} XP</span>
+                        </div>
+                    </div>
+                    <button data-id="${reward.id}"
+                            class="${buttonClasses} ${disabledClass}"
+                            ${(!canAfford || isClaimed) ? 'disabled' : ''}>
+                        ${buttonText}
+                    </button>
+                `;
+                rewardsListContainer.appendChild(itemDiv);
+            });
+        }
+
+        /**
+         * Calculates and updates the total XP based on completed quests.
+         */
+        function updateDailyXP() {
+            let dailyXPEarned = 0;
+            const completedQuestsCount = state.dailyQuests.filter(q => q.completed).length;
+
+            state.dailyQuests.forEach(quest => {
+                if (quest.completed) {
+                    dailyXPEarned += quest.xp;
+                }
+            });
+
+            // Apply bonus/penalty
+            let totalModifierXP = 0;
+            if (completedQuestsCount === state.dailyQuests.length) {
+                totalModifierXP = 25; // Daily Bonus
+                showMessage('Daily Bonus Achieved!', 'You have completed all your quests for the day and earned an extra 25 XP!');
+            } else {
+                const skippedQuests = state.dailyQuests.length - completedQuestsCount;
+                if (skippedQuests > 0) {
+                    totalModifierXP = -10; // Daily Penalty
+                    showMessage('XP Penalty!', `You skipped ${skippedQuests} quests today and lost 10 XP. Keep going!`);
+                } else {
+                    showMessage('XP Updated!', `You earned ${dailyXPEarned} XP today.`);
+                }
+            }
+
+            const newTotalXP = state.xp + dailyXPEarned + totalModifierXP;
+            state.xp = newTotalXP;
+
+            // Log the daily progress
+            const dailyLogEntry = {
+                date: new Date().toLocaleDateString(),
+                quests: state.dailyQuests.map(q => ({ ...q })),
+                dailyXPEarned: dailyXPEarned,
+                bonusPenalty: totalModifierXP,
+                totalXPAfter: state.xp
+            };
+            state.log.push(dailyLogEntry);
+
+            // Reset quests for the next day (in a real app, this would be on a new day)
+            state.dailyQuests.forEach(quest => quest.completed = false);
+
+            renderUI();
+        }
+
+        /**
+         * Handles the claiming of a reward.
+         * @param {string} rewardId The ID of the reward to claim.
+         */
+        function claimReward(rewardId) {
+            const reward = state.rewards.find(r => r.id === rewardId);
+            if (!reward || state.xp < reward.cost || reward.purchased) {
+                showMessage('Cannot Claim Reward', 'You either do not have enough XP, or this reward has already been claimed.');
+                return;
+            }
+
+            state.xp -= reward.cost;
+            reward.purchased = true;
+            showMessage('Reward Claimed!', `You have claimed "${reward.name}" for ${reward.cost} XP.`);
+            
+            renderUI();
+        }
+
+        /**
+         * Exports the daily logs to a CSV file.
+         */
+        function exportToCSV() {
+            if (state.log.length === 0) {
+                showMessage('No Data to Export', 'Complete some quests first to generate data for the log!');
+                return;
+            }
+
+            let csvContent = "Date,Total Quests,Completed Quests,Daily XP Earned,Bonus/Penalty XP,Total XP\n";
+
+            state.log.forEach(entry => {
+                const completedCount = entry.quests.filter(q => q.completed).length;
+                csvContent += `${entry.date},${entry.quests.length},${completedCount},${entry.dailyXPEarned},${entry.bonusPenalty},${entry.totalXPAfter}\n`;
+            });
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'hero-journey-log.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            showMessage('Export Successful!', 'Your journey log has been exported as a CSV file.');
+        }
+
+        // --- Event Listeners ---
+        questListContainer.addEventListener('change', (event) => {
+            if (event.target.type === 'checkbox') {
+                const questId = event.target.dataset.id;
+                const quest = state.dailyQuests.find(q => q.id === questId);
+                if (quest) {
+                    quest.completed = event.target.checked;
+                }
+            }
+        });
+
+        updateXpButton.addEventListener('click', updateDailyXP);
+        exportButton.addEventListener('click', exportToCSV);
+
+        rewardsListContainer.addEventListener('click', (event) => {
+            if (event.target.classList.contains('claim-button')) {
+                const rewardId = event.target.dataset.id;
+                claimReward(rewardId);
+            }
+        });
+
+        closeMessageButton.addEventListener('click', () => {
+            messageBox.classList.add('hidden');
+        });
+
+        // Initial render
+        renderUI();
+
+    </script>
+
+</body>
+</html>
