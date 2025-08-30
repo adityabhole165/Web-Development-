@@ -1,0 +1,10 @@
+/* Direct one level below component Selector  
+
+example =
+div > p 
+
+*/
+/* child descendent relation */
+div > input {
+    background-color: rgb(110, 220, 224);
+}
