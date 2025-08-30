@@ -1,0 +1,17 @@
+/* Attribute Selector :
+ Selects element based on the presence or value of a given Attribute
+
+ input [attr= "value"] {
+    property : value;
+ }
+*/
+
+
+input[type= "text"] {
+    color: rgb(228, 157, 70);
+    background-color: aqua;
+}
+input[type= "password"] {
+    color: rgb(3, 15, 5);
+    background-color: rgb(245, 113, 188);
+}
