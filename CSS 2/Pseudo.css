@@ -6,3 +6,10 @@ button:hover{
 h3:hover{
     text-decoration: overline;
 }
+
+
+/* Actice pseudo class */
+
+button:active{
+    background-color: cadetblue;
+}
