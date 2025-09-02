@@ -18,3 +18,9 @@ p:active{
     font-weight: 600;
     color: darkgreen;
 }
+
+/* checked */
+input[type= "radio"] :checked +  label{
+    font-weight: bold;
+    color: rgb(247, 83, 19);
+}
