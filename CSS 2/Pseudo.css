@@ -13,3 +13,8 @@ h3:hover{
 button:active{
     background-color: cadetblue;
 }
+
+p:active{
+    font-weight: 600;
+    color: darkgreen;
+}
