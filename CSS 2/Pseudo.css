@@ -20,7 +20,12 @@ p:active{
 }
 
 /* checked */
-input[type= "radio"] :checked +  label{
-    font-weight: bold;
-    color: rgb(247, 83, 19);
+input[type= "radio"]:checked +  label{
+    color: rgb(97, 5, 246);
+    font-weight: 900;
+}
+
+/* Nth element */
+.post:nth-of-type(2){
+    background-color: aqua;
 }

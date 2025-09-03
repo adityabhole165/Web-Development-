@@ -52,3 +52,9 @@ h1{
 .upvote + button {
     background-color: cornflowerblue;
 }
+
+input[type= "radio"] :checked +  label{
+    color: rgb(232, 247, 19);
+    font-weight: bold;
+}
+
