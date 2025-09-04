@@ -1,0 +1,9 @@
+div{
+    background-color: yellow;
+}
+form{
+    background-color: red;
+    border: 600px rgb(12, 7, 30) ;
+    border-color: black;
+    width: 20%;
+}
