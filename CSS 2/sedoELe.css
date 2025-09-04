@@ -1,0 +1,17 @@
+h1::first-letter{
+    font-weight: bolder;
+    font-style: italic;
+    color: chartreuse;
+    background-color: cornflowerblue;
+}
+
+p::first-line{
+    font: xx-large;
+    font-size: xx-large;
+    color: teal;
+}
+
+p::selection{
+    background-color: rgb(94, 227, 234);
+
+}
