@@ -10,14 +10,3 @@ h1{
     color: brown;
 }
 
-
-/* hello world */
-div.greetDiv .greet {
-    color:green;
-}
-.greeDiv p.greet{
-    color: blue;
-}
-.greeDiv .greet{
-    color: red;
-}
