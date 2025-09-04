@@ -26,6 +26,6 @@ input[type= "radio"]:checked +  label{
 }
 
 /* Nth element */
-.post:nth-of-type(2){
+.post:nth-of-type(2n){
     background-color: aqua;
 }
