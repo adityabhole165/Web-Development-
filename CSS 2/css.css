@@ -1,0 +1,68 @@
+/* 
+css : cascading style 
+
+cascade in css
+    the css cascade algorithms job is to select css declaration in order to determine the correct values for csss properties.
+
+    h2{
+    color: blue: ---> final color is blue;
+    }
+
+
+    Selector Specificity
+        Specificity is an algorithm that claculates the weight that is applied to a given css declration
+
+        id > classes attributes, pseudo classes > element & pseudo element
+
+        eg :- 
+            h2{
+            back ground color : yellow;
+        }
+
+        id - 0
+         classes -0
+         element - 1
+
+        .myClass:hover {
+            color : blue;
+        }
+        -> id -0  classes - 2  element -0
+
+
+        Selector Specificity 
+            id> class> element  
+            more classes --> less selectors 
+            if specificity is same -> cascading checks 
+
+
+        Inline Specificity-
+        inline styles are more specific than id
+        inline style > id > class > element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            */
