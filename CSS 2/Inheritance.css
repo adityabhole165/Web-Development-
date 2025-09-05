@@ -2,8 +2,20 @@ div{
     background-color: yellow;
 }
 form{
-    background-color: red;
     border: 600px rgb(12, 7, 30) ;
     border-color: black;
     width: 20%;
+}
+
+/*  Input fields does not hinherit properties by defualt */
+
+/* to n herit input field the propertieds of parrent we neet to assign it the proerties using inherit word */
+
+
+input {
+    background-color: inherit;
+}
+
+button {
+    background-color: inherit;
 }
