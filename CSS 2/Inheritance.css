@@ -19,3 +19,8 @@ input {
 button {
     background-color: inherit;
 }
+
+button:hover{
+    background-color: rgb(17, 1, 17);
+    color: tomato;
+}
