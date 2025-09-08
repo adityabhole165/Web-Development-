@@ -24,3 +24,5 @@ button:hover{
     background-color: rgb(17, 1, 17);
     color: tomato;
 }
+
+/*  Some properties can not inheriate by Default some need to add by ourself*/
