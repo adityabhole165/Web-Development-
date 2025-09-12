@@ -25,8 +25,15 @@ h1{
 
 /* border- width style color */
 #shorthand{
-    border: 6px dotted orangered;
-    width: 350px;
+    border: 8px solid orangered;
+    width: 370px;
     height: 120px;
+    border-radius: 15px;
 }
 
+#circle{
+    border: 8px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
