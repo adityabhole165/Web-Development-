@@ -3,4 +3,30 @@ div{
     height: 150px;
     width: 450px;
     background-color: rgb(98, 238, 170);
+
+    /* Border  */
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 208, 255);
+    /* individual border control */
+    border-top-color: rgb(39, 6, 39);
+    border-bottom-color: rgb(39, 6, 39);
+
+    border-left-style: dashed ;
+    margin-top: 20px;
 }
+
+h1{
+    width: 150px;
+    border-width: 10px;
+    border-style:  groove;
+    border-color:violet;
+}
+
+/* border- width style color */
+#shorthand{
+    border: 6px dotted orangered;
+    width: 350px;
+    height: 120px;
+}
+

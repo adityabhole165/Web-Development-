@@ -9,3 +9,6 @@ Margin- Distance between Two Contents/elements
 
 Height - By defaulr it sets the Content Area of element 
 
+// Border
+Border - Use to set an elements border
+ Border-width, border-style, border-color
