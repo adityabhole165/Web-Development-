@@ -12,3 +12,11 @@ Height - By defaulr it sets the Content Area of element
 // Border
 Border - Use to set an elements border
  Border-width, border-style, border-color
+
+
+// Padding 
+    padding-left
+    padding-right
+    padding-top
+    padding-bottom
+    
