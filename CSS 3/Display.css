@@ -1,0 +1,26 @@
+h2{
+    display: inline;
+    background-color: turquoise;
+}
+span{
+    background-color: lime;
+    border: 2px solid black;
+    /* Not applied  */
+    height: 1000px;
+    width: 30px;
+    /* applied on the left and right */
+    padding: 5px;
+    margin: 10px;
+}
+
+div{
+    background-color: lime;
+    border: 2px solid black;
+    /* Not applied  */
+    height: 100px;
+    width: 80px;
+    /* applied on the left and right */
+    padding: 5px;
+    margin: 10px;
+
+}

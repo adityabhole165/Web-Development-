@@ -1,0 +1,9 @@
+Inline vs block
+
+Block element -
+Takes up the full width available (whole block) 
+Start from new line
+
+Inline Elements 
+takes up only necessary width
+Dont start from new line
