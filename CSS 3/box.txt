@@ -19,4 +19,10 @@ Border - Use to set an elements border
     padding-right
     padding-top
     padding-bottom
-    
+
+// Margin
+To set spacing on the outside of Border
+
+Margin-left
+Margin-right
+margin-top

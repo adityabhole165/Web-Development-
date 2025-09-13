@@ -15,7 +15,9 @@ div{
     border-left-style: dashed ;
     margin-top: 20px;
     padding-top: 30px;
-    padding-left: 15px;
+    padding-left: 60px;
+    margin-left: 60px;
+
 }
 
 h1{
@@ -27,6 +29,11 @@ h1{
     padding-bottom:20px ;
     padding-left: 20px;
     padding-top: 20px;
+
+    /* Margin */
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 /* border- width style color */
@@ -61,6 +68,8 @@ h2{
     width: 60px;
     /*padding all sides  */
     padding: 50px;
+    /* margin for all */
+    margin: 80px;
     
 }
 
@@ -69,19 +78,27 @@ h3{
     width: 45px;
     /* top and bottom |left and right  */
     padding: 1px 4px;
+    /* margin - top & bottom | left & right*/
+    margin: 30px 40px;
+
     
 }
 
 h4{
     border: 2px solid rgb(255, 0, 38);
     width: 35px;
-    /* top | left and right | bottom */
-    padding: 4px 8px 2 px;
+    /* padding -top | left and right | bottom */
+    padding: 4px 8px 2px;
+    /* margin - top | left & right | bottom */
+    margin: 10px 20px 30px;
+
 }
 h5{
     border: 2px solid rgb(0, 191, 255);
     width: 38px;
-    /* top , left , right , bottom */
+    /* padding- top , left , right , bottom */
     padding:  5px 9px 8px 7px;
-
+    /* margin-  */
+  /* margin - top | left & right | bottom */
+    margin: 10px 20px 30px 40px;
 }
