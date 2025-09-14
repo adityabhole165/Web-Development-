@@ -1,0 +1,20 @@
+h1{
+    border: 2px solid black;
+    width: 35.5%;
+}
+#outer{
+    height: 90px;
+    width: 85px;
+    background-color: cadetblue;
+    /* padding: 25%; */
+}
+#inner{
+    height: 75px;
+    width: 65px;
+    background-color: brown;
+    /* margin-left: 50px ; */
+ 
+    margin:80%;
+    
+    
+}
