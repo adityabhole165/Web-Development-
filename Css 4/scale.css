@@ -40,3 +40,11 @@ div{
     transform: translate(-200px);
 
 }
+
+#four{
+    transform: skew(30deg);
+}
+
+#fifth{
+    transform: rotate(45deg) translate(150px) skew(35deg);
+}
