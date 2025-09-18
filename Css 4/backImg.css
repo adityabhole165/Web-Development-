@@ -1,0 +1,15 @@
+div{
+    width: 1000px;
+    height: 500px;
+    background-color: aqua;
+    margin: 10px auto;
+    background-image: url("guts.png");
+    background-size: contain;
+}
+
+h1{
+    text-align: left;
+    color: rgb(236, 240, 235);
+    padding: 50px;
+
+}
