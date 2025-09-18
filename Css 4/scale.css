@@ -8,7 +8,7 @@ div{
     text-align: center;
     background-color: #7ea874;
     border: 2px solid black;
-    margin: 10px;
+    margin: 0 auto;
 }
 #one{
     margin-bottom: 50px;
@@ -35,6 +35,8 @@ div{
 }
 
 #third{
-    transform: scaleY(2);
+    margin-top: 50px;
+    /* transform: scaleY(2); */
+    transform: translate(-200px);
 
 }
