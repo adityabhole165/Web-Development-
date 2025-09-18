@@ -1,0 +1,16 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #deb887;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: margin-top 2s ease-in ;
+
+    
+}
+div:hover{
+    margin-top: 400px;
+    background-color:darkred;
+}
+
