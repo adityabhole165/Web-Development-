@@ -31,3 +31,10 @@ div{
     left: 100px; /*offset  */
 
 }
+#absolute{
+    background-color: yellow;
+    position:fixed;
+    top: 100px;
+    left: 100px; /*offset  */
+
+}
