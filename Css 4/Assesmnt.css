@@ -56,4 +56,8 @@ box-shadow: 2px 2px 5px green;
   background-image:url("shelby.jpg");
   background-size: contain;
   opacity: 50%;
+  
+}
+  #myPic:hover {
+  width: 600px;
 }
