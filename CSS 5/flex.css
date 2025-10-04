@@ -12,6 +12,7 @@ helpful to make website responsive websites
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    
 }
 
 h1{

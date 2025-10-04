@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content:flex-start;
+    /* Items align to left */
+    background-color:#eee;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.box{
+    background-color:tomato;
+    color:white;
+    padding:20px;
+    margin:5px;
+    font-weight:bold;
+}
