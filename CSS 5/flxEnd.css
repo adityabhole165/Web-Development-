@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+     justify-content: flex-end;/* items align to the right; */
+    padding: 10px;
+    border: 2px solid  #333;
+}
+
+.box{
+    background-color: aquamarine;
+    color: #333;
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
