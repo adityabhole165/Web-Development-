@@ -1,0 +1,39 @@
+/* Flex wrap */
+/* 
+sets wheather flex items are forced onto one line or can wrap onto multiple lines
+
+flex-wrap : nowrap;
+flex-wrap : wrap;
+flex-wrap : wrap-reverse;
+
+wrap means try to fit in one line if space fills in first line then move to the next line.
+*/
+
+#Container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row;  */
+    flex-direction: column; 
+    justify-content: flex-start;
+    /* Flex wrap*/
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* cross axis reverse direction elements are get wrapped */
+}
+
+h1{
+    text-align: center;
+}
+
+#Container div{
+    height: 100px;
+    width: 300px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}

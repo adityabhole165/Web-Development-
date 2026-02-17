@@ -11,12 +11,18 @@ helpful to make website responsive websites
     margin: 10px auto;
     border: 2px solid black;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     /* flex-direction: row-reverse; */
     /* justify-content: flex-start; */
     justify-content: flex-end;
+    justify-content: space-between;
+    /* adds space between */
+    /* justify-content: space-around; */
+     /*add space left and right as well as in between*/
+    justify-content: space-evenly;
+    /* adds space evenly in left side between and right side  */
     /* flex-direction: column; */
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     
 }
 
@@ -25,7 +31,7 @@ h1{
 }
 
 #Container div {
-    height: 30px;
+    height: 100px;
     width: 100px;
     color: white;
     text-align: center;

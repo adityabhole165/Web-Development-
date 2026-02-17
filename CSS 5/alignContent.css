@@ -1,0 +1,43 @@
+/*  Align Content */
+/* 
+
+it sets the distribution of space between and around content items along a flexbox cross axis
+
+align-content: flex-start/ flex-end/ center
+
+align-content: space-between / space-around / evenly
+
+align-content : baseline
+*/
+#Container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; 
+    /* flex-direction: column;  */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: flex-start; */
+    align-content: baseline;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#Container div{
+    height: 50px;
+    width: 300px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}
