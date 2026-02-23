@@ -1,0 +1,52 @@
+/* 
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animatio-iteration-count
+animation-direction
+
+*/
+.box{
+    height: 180px;
+    width: 300px;
+    background-color: aquamarine;
+    
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimate; */
+    animation-name: WidthAnime;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes fontAnimation{
+    from {
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: palevioletred;
+    } 
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes WidthAnime{
+    from{
+        width: 20px;
+    }
+    to{
+        width: 1000px;
+    }
+}

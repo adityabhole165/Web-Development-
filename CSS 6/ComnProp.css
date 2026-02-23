@@ -1,0 +1,36 @@
+.container{
+    width:  710px;
+    height: 533px;
+    background-color: yellow;
+    display: inline-grid;
+    /* grid-gap:10px; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    /* common props */
+    /* justify-items: start; */
+    /* justify-items:end; */
+    justify-items:center;
+
+    /* align-items:start; */
+    /* align-items:end; */
+    align-items: center;
+}
+
+.item{
+    height: 50px;
+    width: 90px;
+    background: royalblue;
+    text-align: center;
+
+} 
+.two{
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/4; */
+    /* grid-row: 1/span 4; */
+    /* justify-self: end; */
+    /* align-items: start; */
+    /* align-self: end; */
+    place-self: start;
+}

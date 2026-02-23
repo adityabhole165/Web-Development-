@@ -1,0 +1,18 @@
+.container{
+
+    width: 900px;
+    height: 400px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns:auto auto ; */
+    /* avoid auto for the coding use direct values */
+    grid-template-columns: 200px 200px 200px;
+}
+.item{
+    /* height: 50px;
+    width: 50px; */
+    background-color: rgba(0, 166, 255, 0.861);
+    text-align: center;
+}

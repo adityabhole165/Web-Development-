@@ -1,0 +1,33 @@
+/* CSS grid */
+
+/* 
+setting a container's Display to grid will make all children grid items 
+
+container{
+display:grid;
+}
+
+flexbox helps to make Layout in one direction 
+
+in grid we make 2d container layout 
+  
+the box inside grid conatainer is called grid items
+
+*/
+
+.container{
+    width: 900px;
+    height: 300px;
+    background: slategrey;
+    /* display: flex; */
+    display: grid;
+
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background: #eaa52f;
+    border: 2px solid black;
+    text-align: center;
+}

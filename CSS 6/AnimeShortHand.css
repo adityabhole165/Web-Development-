@@ -1,0 +1,72 @@
+
+.box{
+    height: 180px;
+    width: 300px;
+    background-color: aquamarine;
+    
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimate; */
+    /* animation-name: WidthAnime;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* Short hand */
+
+    /* animation: WidthAnime 3s ease-in 0s infinite normal; */
+    animation: Multiple 3s ease-in 0s infinite normal;
+
+}
+
+@keyframes fontAnimation{
+    from {
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: palevioletred;
+    } 
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes WidthAnime{
+    from{
+        width: 20px;
+    }
+    to{
+        width: 1000px;
+    }
+}
+
+/* Multiple  */
+@keyframes Multiple{
+    from{
+        width: 20px;
+        background-color: black;
+        font-size: x-small;
+        text-decoration: underline;
+        border: 2px solid black;
+        border-radius: 50px;
+        
+    }
+    to{
+        width: 1000px;
+        background-color: white;
+        font-size: xx-large;
+        text-decoration: wavy;
+        
+        border-radius: 80px;
+        border: 50px dotted blue;
+        
+
+    }
+}

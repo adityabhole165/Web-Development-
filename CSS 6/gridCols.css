@@ -1,0 +1,40 @@
+/* * Grid Columns> */
+
+/* 
+Define an item's starting and ending position inside the column
+
+grid-column-start: line_number
+grif-column-end: line_number
+
+grid-column: start_col/ end_col
+grid-column: start_col/ span number 
+
+span means how many columns want afeter start 
+
+
+*/
+.container{
+    width:600px;
+    height: 60px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+}
+.item{
+    background-color: greenyellow;
+    border: 3pc solid firebrick;
+    text-align: center;
+}
+.one{
+    grid-column-start:2 ;
+    grid-column-end: 4;
+}
+.two{
+    grid-column: 1/4;
+}
+
+/* .three{
+    grid-column: 2/span 3;
+} */

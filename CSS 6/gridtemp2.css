@@ -1,0 +1,28 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    /* grid template repeat  */
+    /* grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr); */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+    width: 100px;
+    height: 40px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* 
+for 1D  layout only in rows or in columns
+in this case give first prefenrence to Flex box
+
+
+grid is used when we need rows and columns at same time
+
+*/
