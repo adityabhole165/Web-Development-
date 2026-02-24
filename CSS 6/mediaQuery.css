@@ -1,0 +1,58 @@
+/* 
+Media Queries
+
+Help create a responsive website 
+
+media feature - widthof viewport
+
+@media(width:400px)
+{
+div{
+    background-color:red;
+}
+
+device / environment-> width , height, Orientation- landscape portrait
+
+example
+media features-width(of view port)
+
+@media(width:400px){
+div{
+    background-color:red;
+}
+}
+*/
+
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (width:700px) {
+    h1{
+        background-color: red;
+        color: white;
+    } 
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }   
+}
+
+@media (min-width:400px){
+    h1{
+        background-color: darkred;
+    }
+}
+@media (max-width:700px){
+    h1{
+        background-color: pink;
+    }
+}
+
+@media (min-width: 200px  )and (max-width:300px){
+    h1{
+        background-color: magenta;
+    }
+}

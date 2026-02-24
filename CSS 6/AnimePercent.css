@@ -1,0 +1,28 @@
+/* 
+from means zero percent 
+and to means hundered percent 
+
+% in Animation
+
+@keyframes myName{
+    0% {font-size:20px;}
+    50%{font-size:30px;}
+    100%{font-size:40px;}
+}
+*/
+
+.box{
+    width:80px;
+    height: 30px;
+    background-color: brown;
+    color: aqua;
+
+    animation: percentAnimate 3s ease-in 0s infinite normal;
+}
+
+@keyframes percentAnimate{
+    0%{ background-color: yellow;}
+    50%{background-color: tomato;}
+    80%{ background-color: gray;}
+    100%{background-color: blueviolet;}
+}
