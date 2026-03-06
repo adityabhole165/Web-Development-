@@ -1,0 +1,23 @@
+/* Media Queries 
+orientation of viewport */
+
+/* @media(Orientation : landscape){
+
+    div{
+        background-color: red;
+
+    }
+}
+ */
+
+
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+@media(orientation:landscape){
+    h1{
+        background-color: violet;
+        color: brown;
+    }
+}
