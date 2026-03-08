@@ -1,0 +1,58 @@
+Basic Design Principles 
+For better looking website 
+color - neat and clean look in Design
+
+-----------------------------------------
+
+Color Theory-
+ color wheel 
+ Red blue yellow
+ violet green orange
+ yellow orange, red orange , red violet, blue violet,blue green , yellow green 
+
+
+ highlight - yellow
+ red - exitement 
+ apple - black white grey 
+
+
+ website moto match with colors 
+
+ eye pleasing and senseable 
+
+ Color Combination  -
+ Monochromatic - subtle color 
+ Complementary -impactful color
+
+ High Contrast - tiadic 
+
+ ------------------------------------------
+
+ Typography - Style and Appearance of Text
+
+ font families -
+ sans-serig
+ serif
+ monospace
+ cursive
+ fantasy
+
+ Portfolio - professional - times new roman , Calibri, roboto
+
+ museum - old , vintage
+
+ ice cream - fum fantasy
+
+ In 1 section use max 2 fonts 
+
+ ----------------------------------------
+
+ Google fonts - library of fonts 
+
+ ----------------------------------------
+
+ icons - font awesome , Google icons 
+
+font awsome - cdnjs / libraries/ font - awsome 
+
+copy link 
