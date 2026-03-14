@@ -1,0 +1,9 @@
+.container{
+    background-color: rgba(39, 183, 196, 0.575);
+}
+.container-md{
+    background-color: #F45F68;
+}
+.container-fluid{
+    background-color: #f852a5;
+}

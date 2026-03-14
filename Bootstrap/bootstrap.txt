@@ -1,0 +1,29 @@
+Bootstrap is a framework of css its toolkit 
+css first 
+then bootstrap 
+
+
+framework - toolkit 
+Styling component understanding is important 
+understanding
+
+flexbox  
+
+prebuilt component buttons forms navbar 
+
+
+# NOTE
+
+Bootstrap is a powerful, feature-packed frontend toolkit . Build anything from prototype to production in minutes
+
+it already has prebuilt css files
+
+bootstrap.com 
+
+
+Benifits -
+Makes Development Faster and Easier
+Good choice of pre-built components are already responsive 
+good browser Compatibility
+
+
