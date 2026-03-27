@@ -17,7 +17,7 @@ body {
     background-color: black;
     width: 340px;
     border-radius:1rem;/* 16 px*/
-
+    margin-right: 0.5rem;
 
 }
 
@@ -102,4 +102,35 @@ a{
 
 i{
     margin-top: 15px;
+}
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.7rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.box-p2{
+opacity: 0.9;
+font-size: 0.85rem;
+}
+
+.badge{
+     background-color: #fff;
+     border: none;
+     border-radius:100px;
+     padding:0.25rem 1rem;
+     font-weight: 700;
+     margin-top: 0.5rem;
+     height: 2rem;
+     width: fit-content;
+
 }
