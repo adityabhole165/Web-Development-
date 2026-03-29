@@ -342,3 +342,63 @@ font-size: 0.85rem;
 }
 
 
+/* Control */
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-right: 40px;
+}
+
+.control button{
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.15s;
+    padding: 0;
+    line-height: 1;
+}
+
+.control button:hover {
+    color: #fff;
+}
+
+.volume-row{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.volume-slider{
+    width: 80px;
+    height: 4px;
+    background: #535353;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.volume-fill {
+    height: 100%;
+    width: 80%;
+    background:#fff ;
+    border-radius: 2px;
+}
+
+.volume-row:hover .volume-fill {
+    background: #1bd954;
+}
+
+@media (max-width: 768px) {
+      .music-player { grid-template-columns: auto 1fr auto; }
+      .album-info .artist, .album .fa-circle-check { display: none; }
+      .control button:not(:last-child) { display: none; }
+      .volume-slider { display: none; }
+    }
+ 
+    @media (max-width: 480px) {
+      .music-player { grid-template-columns: auto 1fr; }
+      .control { display: none; }
+    }
