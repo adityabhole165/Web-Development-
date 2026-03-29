@@ -1,0 +1,29 @@
+What is a Variable -
+    A variable is simply the name of a storage location 
+    age = 23 
+    name =Tony stark
+
+    variables value can change and will be change 
+
+    a = 10 here a is variable and 10 is value of vairable 
+
+    examples 
+    a=10
+    10
+    b=5
+    5
+    age = 23
+    23 
+
+    name = "Aditya"
+    'Aditya'
+    a
+    10
+    b
+    5
+    name
+    'Aditya'
+
+
+    a + b
+    15
