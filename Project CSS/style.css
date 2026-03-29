@@ -167,7 +167,7 @@ font-size: 0.85rem;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
-    
+    z-index: 10;
 }
 
 .sticky-nav-icons  {
