@@ -1,0 +1,5 @@
+Browser console
+
+ctrl l to clear 
+
+in browser console it uses REPL - Read Evaluate Print Loop 
