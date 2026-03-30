@@ -1,0 +1,38 @@
+Numbers in JS -
+Positive (14) & negative (-4)
+Integers(45,-50)
+Floating numbers- with decimal( 4.6,8.9)
+
+JS automatically detects type 
+
+example from console 
+a=16
+16
+typeof a
+'number'
+price= 99.99
+99.99
+typeof price
+'number'
+
+we can perform operations on Variables 
+like addition , substraction 
+
+example in console
+a=10
+10
+b = 5
+5
+a + b
+15
+a - b 
+5
+
+
+there is limit to numbers 
+a= 0.99999999999999999999999999999999999999999
+1
+a=0.333333333333333333
+0.3333333333333333
+
+if it hits it take roundof number 
