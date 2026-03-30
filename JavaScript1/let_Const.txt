@@ -28,3 +28,15 @@ let finalSum = num1 + num2
 undefined
 finalSum
 3
+
+
+-----------------------------------
+
+const keyword -
+values of constants can't be changed with re-assignment and they can't be redeclared 
+
+const year =  2025
+year = 2026 //error
+year = year + 1
+const pi = 3.14
+const g = 9.8
