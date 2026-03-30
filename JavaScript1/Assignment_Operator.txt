@@ -1,0 +1,40 @@
+Assignment Operator
+
+=  it assign number to varible to store data 
+
+different form of assignmentoperator 
+
+age = age + 1
+age += 1
+
+age = age -1
+age -= 1
+
+age = age * 1
+age *= age
+
+
+age = age/2
+age /= 2
+
+
+age = age % 2
+age %= 2
+
+
+Operator example in console 
+
+let age = 23
+undefined
+age += 1
+24
+age -=4
+20
+age *=2
+40
+age/=2
+20
+age %= 3
+2
+age
+2
