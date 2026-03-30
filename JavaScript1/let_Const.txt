@@ -1,0 +1,30 @@
+let Keyword
+syntax of declaring variable 
+
+let age = 23
+age = age + 1
+
+let cgpa ;
+cgpa = 8.9
+
+let num1 = 1;
+let num2 = 2
+let sum = num1 + num2 
+
+let a = 5
+
+it can be initialized without value
+eg let be
+
+in console code
+
+let num1 = 1
+undefined
+let num2 = 2
+undefined
+let finalSum = num1 + num 2
+VM2253:1 Uncaught SyntaxError: Unexpected numberUnderstand this error
+let finalSum = num1 + num2
+undefined
+finalSum
+3
