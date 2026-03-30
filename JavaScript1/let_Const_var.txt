@@ -39,4 +39,28 @@ const year =  2025
 year = 2026 //error
 year = year + 1
 const pi = 3.14
-const g = 9.8
+const g = 9.82
+
+
+---------------------------------------
+
+Var keyword old syntax of writing variables 
+var age = 23;
+var cgpa = 8.9
+
+var num1 = 1;
+var num2 = 2 
+var sum =  num1 + num 2
+
+console example
+var n = 5
+undefined
+var m = 10
+undefined
+var sum = m + n
+undefined
+sum
+15
+
+
+
