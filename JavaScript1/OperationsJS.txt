@@ -1,0 +1,53 @@
+Operations  in JS 
+a = 20
+b = 10
+
+addition 
+sum =  a + b
+in this a and b is operand and + is operator
+
+substraction
+diff = a - b
+
+multiplication 
+prod = a * b 
+
+division
+div = a / b
+
+modulo ( remainder operator )
+12 % 5 = 2
+
+Exponentiation power operator 
+2**3 = 8
+
+modulo used to find odd and even number
+if number modulo number complete divides and give 0 then it even if it gives 1 then its odd 
+
+console example
+
+9 % 2
+1
+12 % 2
+0
+8 % 2
+0
+3 % 2
+1
+
+
+Exponentiation power operator
+2**2 means 2*2
+
+console example
+2**3
+8
+a = 3 
+3
+b = 3
+3
+a**b
+27 
+
+
+
