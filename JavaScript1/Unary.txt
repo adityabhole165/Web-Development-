@@ -1,0 +1,39 @@
+Unary Operator
+age = age + 1
+age += 1
+age++ // increment 
+
+age = age - 1
+age -= 1
+age-- // decrement
+
+
+difference between Binary and unary =
+binary means 2 operands means a + b , a* b , a/b  in this operands are a & b
+
+unary needs only single operands
+a -= 1
+
+
+increment operator is ++
+decrement operator is --
+
+
+***********************
+
+Unary Operators 
+Pre increment  ( change, then use)
+let age = 10;
+let newAge = ++age; 
+newAge = 11
+
+Post - increment (use , then change)
+let age = 10;
+let newAge = age++;
+newAge = 11
+
+pre-decrement 
+--age
+
+post - decrement
+age--
