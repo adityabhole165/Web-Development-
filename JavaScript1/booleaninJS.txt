@@ -1,0 +1,11 @@
+Boolean in Js 
+boolean represents a truth value  -> true and false
+
+let age = 23;
+let isAdult = true
+
+let age = 13 
+let isAdult = false
+
+in js we can change the type of variable 
+
