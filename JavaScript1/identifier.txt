@@ -1,0 +1,29 @@
+Identifier Rules -
+
+All Javascript variables must be identified with unique names(identifiers).
+
+Names can contain letters, digits , underscores , and doller signs (no space)
+
+Names must begin with a letters
+
+Names can also begin with $ and _
+
+Names are case sensitive(y and Y are different variables)
+
+Reserved words (like Javascript keywords )CAN NOT be used as names
+
+-------------------------------
+
+Camel Case - 
+Way of writing identifiers
+
+CameCase(Js nameing convention)
+
+snake_case
+
+PascalCase
+
+examples  -
+camel case - let fullName
+snake_case - let full_name
+PascalCase - let FullName
