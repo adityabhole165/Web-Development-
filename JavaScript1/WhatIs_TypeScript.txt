@@ -1,0 +1,5 @@
+TypeScript
+static typed where Js is dynamic typed 
+designed by microsoft 
+
+
