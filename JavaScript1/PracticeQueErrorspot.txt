@@ -1,0 +1,18 @@
+Practice Ques  
+Qs . FInd the errors in the Following code 
+a) let 1age = 5
+    let 2age = 10
+ans
+    let age1 = 5;
+    let age2 = 10;
+
+
+
+
+b) let marks = 75;
+let isPass = True
+ans 
+    true in lower case 
+
+c) let isPass = ' true';
+ans - write true without Quotes 
