@@ -1,0 +1,37 @@
+null and undefined in js:
+
+undefined  - A variable that has not been assigned a valueis of type undefined
+
+e.g.
+ let a ;
+ a
+ undefined 
+
+ null - The null value represents the intentional absence of any object value.
+
+ To be explicitly assigned.
+
+ e.g.
+ let a = null
+ a
+ null
+
+ undefined example
+ let name ;
+undefined
+name 
+undefined
+typeof name
+'undefined'
+
+
+null example
+let year = null;
+
+undefined
+year
+null
+year = 2000
+2000
+year
+2000
