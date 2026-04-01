@@ -1,0 +1,42 @@
+Practice Que 
+
+Qs . Declare your name as a String and print its length is js .
+-->
+String myName = "Aditya Bhole"
+myName.length
+
+in console 
+let myName = "Aditya Bhole"
+undefined
+myName.length
+12
+
+Qs. Declare your name as a String and print its first char 
+-->
+let FirstName = "Aditya"
+FirstName[0]
+
+in console 
+let FirstName = "Aditya"
+FirstName[0]
+'A'
+
+
+Qs Declare your first name as a String and print its last character.
+-->
+let firstName = "Aditya"
+firstname = firstname[firstName.length-1 ]
+
+let firstName = "Aditya"
+firstName[firstName.length-1 ]
+'a'
+
+
+Qs. What is output of following code :
+"apanacollege"+123
+-->
+apnacollege123
+
+
+Qs what are the lengths of an empty string and a a string with a single space.
+--> 0,1
