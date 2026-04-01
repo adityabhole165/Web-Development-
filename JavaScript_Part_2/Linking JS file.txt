@@ -1,0 +1,5 @@
+Linking JS file
+
+<script src="app.js"></script>
+
+script tag is written in befor body tag ending 
