@@ -1,0 +1,7 @@
+Template Literals -
+They are used to add embedded expressions in a string.
+
+let a = 5;
+let b= 10;
+
+console.log('your pay ${a+b} rupees');
