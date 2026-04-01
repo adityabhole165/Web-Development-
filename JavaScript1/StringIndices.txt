@@ -1,0 +1,98 @@
+String indices Internally each character has its own position 
+
+let name = "Tony Strak"
+
+Tony Stark -> String 
+0123456789 -> indexing 
+
+this is zero based indexing 
+
+to access indexing 
+name[0] = T
+name[1] = o
+name[5] = S
+
+
+if we accessed the index which is not has any character and outside the length then it shows undefined
+
+we can also print length of String 
+synatx is name.length
+let name = "Tony Stark"
+undefined
+
+
+
+
+Concatination - Adding String together.
+
+"Aditya" + " " + "Bhole" ="Aditya Bhole"
+
+
+"Aditya" + 1 = Aditya1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name 
+'Tony Stark'
+name[0]
+'T'
+name[2]
+'n'
+name[2]
+'n'
+name[5]
+'S'
+
+name.length
+10
+typeof name.length
+'number'
+name[name.length]
+undefined
+
+typeof name.length
+'number'
+name[name.length]
+undefined
+name[name.length - 1]
+'k'
+name[name.length - 2]
+'r'
+name[name.length - 3]
+'a'
+"Aditya".length
+6
+
+
+Concatenation 
+"Aditya" + " " + " Bhole "
+'Aditya  Bhole '
+let firstName = "Tony"
+undefined
+let lastName = "Stark"
+undefined
+let fullName = firstName + lastName
+undefined
+fullName 
+'TonyStark'
