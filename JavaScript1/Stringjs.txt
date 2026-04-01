@@ -1,0 +1,78 @@
+Strings in js -
+Strings are txt or sequence of characters
+
+let name = "Tony stark";
+let role = " Iron Man"
+let char = 'a';
+let num = '23'
+let empty = " ";
+
+Strings are written in single quotes or in double quotes 
+
+for single alphabate use single quote 
+
+for word and sentence use double quote
+
+
+ if we have to print string with QUotes inside Quotes 
+ then use as below 
+ 'this is "apple" '
+ like this or vicevesa for quotes only 
+ dont use single quote inside single quotes smae rules for double quote 
+
+
+let firstName = " Aditya "
+undefined
+firstName
+' Aditya '
+typeof fir
+'undefined'
+typeof firstName
+'string'
+let lastName = 'Stark'
+undefined
+lastName
+'Stark'
+let char = 'a';
+undefined
+char
+'a'
+typeof char
+'string'
+lwr num = ' 123 ';
+VM487:1 Uncaught SyntaxError: Unexpected identifier 'num'Understand this error
+let num = ' 123 ';
+undefined
+num
+' 123 '
+typeof num
+'string'
+let emp = " "
+undefined
+emp
+' '
+type 
+VM633:1 Uncaught ReferenceError: type is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM633:1Understand this error
+ty
+VM642:1 Uncaught ReferenceError: ty is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM642:1Understand this error
+StylePropertyMapReadOnly emp
+VM673:1 Uncaught SyntaxError: Unexpected identifier 'emp'Understand this error
+typeof emp
+'string'
+
+
+
+
+-----
+let sentence = ' this is "Apple"'
+undefined
+sentence
+' this is "Apple"'
+let statement = " this is 'apple' "
+undefined
+statement 
+" this is 'apple' "
