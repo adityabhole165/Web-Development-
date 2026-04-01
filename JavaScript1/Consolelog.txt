@@ -1,0 +1,27 @@
+console.log()
+To write (log) a message on the console 
+
+console.log("Aditya");
+console.log(1234);
+console.log(2+2);
+
+
+"hello"
+'hello'
+console.log("Hello!");
+VM2443:1 Hello!
+undefined
+console.log(" Hello From Aditya");
+VM2546:1  Hello From Aditya
+undefined
+let num = 123
+undefined
+console.log( num );
+VM2671:1 123
+undefined
+console.log(1+2)
+VM2725:1 3
+undefined
+console.log("hello","world", num, (1+4))
+VM2852:1 hello world 123 5
+undefined
