@@ -1,0 +1,24 @@
+Comparison Operators 
+Comparison Operators to Compare 2 values
+> 
+>=  
+<
+<=
+== 
+!=
+
+difference betweeen == and ===
+== : compares value, not type 
+"123"== 123
+1=='1'
+0==' '
+0 == false
+null == undefined
+
+=== : comapres types and value
+"123" == 123
+1 === '1'
+0==' '
+0 == false
+null == undefined
+
