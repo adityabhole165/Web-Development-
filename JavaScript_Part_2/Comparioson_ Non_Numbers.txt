@@ -1,0 +1,7 @@
+Comparison for non numbers
+'a' > 'A'
+true 
+
+'a' = 61 and 'b' = 62
+
+js has each letter their own unicodes 
