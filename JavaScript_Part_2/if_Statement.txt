@@ -1,0 +1,8 @@
+if Statement
+if is a keyword 
+
+if(some condition){
+    //DO Something
+}
+
+//some code after 
