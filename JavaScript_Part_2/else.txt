@@ -1,0 +1,7 @@
+else Statement
+if(condition 1) {
+    //do something
+}
+else {
+    //do something 
+}
