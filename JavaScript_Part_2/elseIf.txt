@@ -1,0 +1,11 @@
+else if Statement 
+
+if( conditiona 1 ){
+    //DO something 
+}
+else if (condition 2) {
+    //do something
+}
+else if(condition 3){
+    // do something
+}
