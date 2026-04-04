@@ -1,0 +1,5 @@
+Qs. Create a System to calculate pop corn prices based on the size customer asked for:
+    if size is 'XL' , Price is Rs.250
+    if size is 'L' , Price Rs 200
+    if size is 'M', price is Rs 100
+    if size id 'S', price is rs 50
