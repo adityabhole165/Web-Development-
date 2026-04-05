@@ -1,0 +1,15 @@
+Logical Operators
+Logical Operators to combine expressions 
+&& :- Logical AND  e.g. (exp1)&&(exp2)
+|| :- Logical OR   e.g.  (exp1)||(exp2)
+! :- Logical Not   e.g. !(exp1)
+
+
+
+
+&& :- Logical AND  e.g. (exp1)&&(exp2)
+conditions -
+true && true output - true
+true && false output - false
+false && true output - false
+false && false output - false
