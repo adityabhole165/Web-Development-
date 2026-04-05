@@ -1,0 +1,11 @@
+Nested if else
+Nesting is writting if-else inside if-else statements.
+It can have many levels
+
+if marks >= 33
+    if marks >=80
+        print "O"
+    else    
+        print "A"
+else    
+    print "better luck next time!"
