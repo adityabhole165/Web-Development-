@@ -1,0 +1,10 @@
+Logical Not(!)
+! :- Logical NOT !(Expression)
+
+input -> !true 
+output -> false
+
+input -> !false 
+output -> true
+
+
