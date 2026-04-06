@@ -1,0 +1,9 @@
+truty and falsy
+    Everything is js is true or false (in boolean context).
+    This doesn't mean their value itselg is false or true, but they are treated as false or true if taken in boolean context.
+    Falsy values    
+        false, 0, -0,On(BigInt Value), ""(empty string), null , undefined, NaN
+    Truty Value 
+        Everything else 
+
+        
