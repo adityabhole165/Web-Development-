@@ -1,0 +1,4 @@
+Practice Ques- 
+Qs - USe switch to print the day of week using a number variable 'day' with values 1 to 7 
+
+like 1 . Monday 2 Tuesday and so on 
