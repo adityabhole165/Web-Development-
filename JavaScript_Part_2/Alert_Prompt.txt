@@ -1,0 +1,9 @@
+Alert and Prompt-
+
+Alert-
+Alert displays an alert message on page
+Alert("Something went wrong");
+
+Prompt-
+Prompt displays a dialog box that asks user for some input
+propmt("Please enter your roll no.");
