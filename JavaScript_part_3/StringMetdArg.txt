@@ -1,0 +1,5 @@
+String Methods with Arguments
+Argument is a some value that we pass 
+to the method 
+format
+stringName.method(arg);
