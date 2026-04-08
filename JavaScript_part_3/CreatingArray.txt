@@ -1,0 +1,8 @@
+Creating Array 
+
+let marks = [99,85,93,76,62];
+let name = ["adams","bob","catlyn"];
+let info = ["aditya",26,6.1]; //mixed Array
+
+//empty Array
+let newArr = [];
