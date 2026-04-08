@@ -1,0 +1,5 @@
+String methods 
+methods - actions that can be performed on objects 
+
+format 
+stringName.method()
