@@ -5,3 +5,4 @@ let fruits = ["mango","apple","chiku"]
 console.log(fruits);
 fruits[2]="banana"
 console.log(fruits);
+[ 'mango', 'apple', 'banana' ]
