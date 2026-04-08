@@ -1,0 +1,4 @@
+Array
+Linear collection of things 
+
+let students = ["aditya","ram","sham"];
