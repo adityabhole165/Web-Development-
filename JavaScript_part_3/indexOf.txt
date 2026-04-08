@@ -1,0 +1,10 @@
+indexOf -
+returns the first index of occurrence 
+of some value in string.
+or give -1 if not found.
+
+let str = "ILikeCoding"
+
+str.indexOf("Like");
+str.indexof("j");
+str.indexOf("o");
