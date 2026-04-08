@@ -1,0 +1,5 @@
+Method chaining
+using one method after another.Order of 
+execution will be left or right.
+
+str.toUpperCase().trim();
