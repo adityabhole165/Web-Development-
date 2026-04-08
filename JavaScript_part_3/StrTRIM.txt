@@ -1,0 +1,16 @@
+let msg = " Hello ";
+
+str.trim();
+Trims whitespaces form both ends of string and returns a new one 
+
+let msg = " Hello "
+
+msg.trim();
+output = 'Hello'
+
+msg 
+output = '  Hello  '
+
+output : "Hello", but value of msg remains same. 
+
+note it not remove whitespace between string 
