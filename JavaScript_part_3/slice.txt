@@ -1,0 +1,11 @@
+slice
+Returns a part of the 
+original string as a new string
+
+let str ="ILikeCoding"
+
+str.slice(5)
+str.slice(1,4)
+
+str.slice(-num) = str.slice(length-num)
+pass negative value
