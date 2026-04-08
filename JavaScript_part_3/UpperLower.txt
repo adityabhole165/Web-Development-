@@ -1,0 +1,7 @@
+ToUpperCase() & ToLowerCase()
+
+let str = "Random String";
+
+str.toUpperCase() = "RANDOM STRING"
+str.toLowerCase() = "random string"
+
