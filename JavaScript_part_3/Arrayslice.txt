@@ -1,0 +1,13 @@
+Array Slice :
+copies a portion of an array 
+ending index is exclusive
+
+let colors = ["red","yellow","blue","orange","pink","white"];
+
+colors.slice();
+
+colors.slice(2);
+
+colors.slice(2,3);
+
+colors.slice(-2);
