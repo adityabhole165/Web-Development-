@@ -1,0 +1,5 @@
+Array Methods
+push: add to end
+unshift : add to start
+Pop : delete from end and returns it 
+shift : delete from Start and returns it
