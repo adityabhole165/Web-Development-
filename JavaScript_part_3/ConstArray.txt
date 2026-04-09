@@ -1,0 +1,12 @@
+Constanat Arrays
+const arr = [1,2,3,4];
+on constant array operations are performed
+like push , pop 
+but new array is not assigned to this const 
+array 
+array stored address of that assigned values of 
+arrays  
+in the constant array it can not override address 
+of already give values 
+inside variable others address and reference 
+can not add in that 
