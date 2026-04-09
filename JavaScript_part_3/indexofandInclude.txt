@@ -1,0 +1,10 @@
+index of : returns index of something
+let primary = ["red","yellow","blue"];
+primary.indexof("yellow");
+1
+primary.indexof("green");
+-1
+
+includes : search for a value
+primary.includes("red");
+primary.includes("green");
