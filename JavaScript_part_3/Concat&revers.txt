@@ -1,0 +1,8 @@
+concat : merge 2 Arrays
+let primary = ["red","yellow","blue"]
+let secondary = ["orange',"green","violet"]
+
+primary.concat(secondary);
+
+[ 'red', 'yellow', 'blue', 
+'orange', 'green', 'violet' ]
