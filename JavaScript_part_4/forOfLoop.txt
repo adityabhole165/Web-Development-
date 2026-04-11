@@ -1,0 +1,13 @@
+for of loop 
+for(element  of collection) {
+    //do something
+}
+
+let fruits =[ "mango","apple","banana","lichi","orange"];
+for(fruit of fruits ){
+    console.log(fruit);
+}
+
+for(char of "aditya"){
+    console.log(char);
+}
