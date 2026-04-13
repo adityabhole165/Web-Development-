@@ -1,0 +1,12 @@
+Add/ Update value
+
+const student ={
+    name : "Aditya",
+    age :23,
+    marks:86.60,
+    city:"Delhi"
+}
+
+Change the city to "Mumbai"
+Add a new property, gender:"Male"
+Change the marks to "A"
