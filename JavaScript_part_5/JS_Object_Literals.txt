@@ -1,0 +1,18 @@
+Js Object Literals
+Used to store keyed collections and Complex entities
+
+Property =>(ket,value) pair
+Objects are a collection of properties 
+
+Object literals means creating object type of data 
+
+Student -
+name "Aditya"
+age 23
+marks 89.33
+  |      |
+  V      V
+keys  values
+
+we can change key values inside objects key value paris 
+but does not change Object reference 
