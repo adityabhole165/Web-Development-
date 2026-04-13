@@ -20,5 +20,4 @@ console.log(Fruits);
 console.log("reverse order");
 for (let index = Fruits.length-1; index >=0 ; index--) {
    console.log(index, Fruits[index]);   
-    
 }
