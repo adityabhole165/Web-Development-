@@ -1,0 +1,15 @@
+1. Key press - game start 
+2. use press btn + it shows level 1
+ it blinks one color
+there is game seq and use press buttons sequence
+3. bthn press check [event Listner ]user -> green
+check swquence if same level up 
+if not game over 
+
+-------------------------------------------------------
+
+GameSeq = [yellow, purple, green ,red ]
+
+case 1 :yellow ,Purple, green --> Middle--> next button press wait --> Check 
+
+case 2: Last(case level = last idx  ) --> level up -->game new color 
