@@ -1,0 +1,9 @@
+Functions in js 
+Function Definition (telling js )
+
+function funcName(){
+    //do something
+}
+
+function Calling (using the function )
+funcName();
