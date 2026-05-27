@@ -1,0 +1,19 @@
+Writing Markup in jsx
+1.Return a single root Element  
+    function App() {
+  // <button>Check Info</button>
+  // return (
+  //   <>
+  //     <h1>Hello World </h1>
+  //     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore harum repudiandae.</p>
+  //     <button type="button">Check </button>
+  //   </>
+  // )
+    }
+2. Close all the tags 
+    <img/>
+
+3. CamelCase most of the things 
+<div id = "title" class="" X Use className="header"> //Not write the Class word  instead use className 
+    <Title></Title>
+</div>

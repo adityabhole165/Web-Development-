@@ -1,0 +1,8 @@
+Set up Local Environment
+Create-React-App v/s Vite
+
+npm create vite@latest
+npm run dev 
+
+
+vite js.dev

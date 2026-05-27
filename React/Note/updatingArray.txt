@@ -1,0 +1,35 @@
+Updating in Array 
+updating all elements in array 
+
+let UpperCaseAll = () => {
+    setTasks(
+        (prevTasks) =>{
+            prevTasks.map((todo) =>{
+                return{
+                    ..todo,
+                    task:todo.task.toUppervase();
+                };
+            })
+        }
+    );
+}
+
+
+updating One Element in Aray 
+
+let upperCaseOne = (id) => {
+    setTasks((prevTasks) =>
+        prevTasks.map(
+            (todo) => {
+                if(todo.id == id) {
+                    return{
+                        ...todo,
+                        task:todo.task.toUppercase(),
+                    };
+                }else {
+                    return todo;
+                }
+            }
+        )
+    );
+};

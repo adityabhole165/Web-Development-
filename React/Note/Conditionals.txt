@@ -1,0 +1,5 @@
+Conditionals 
+Adding elements on the basis of some condition 
+
+{price >= 10000 ? <p> Discount : 5%</p> :null}
+{price >= 10000 && <p> Discount : 5%</p>}

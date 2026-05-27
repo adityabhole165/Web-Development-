@@ -1,0 +1,13 @@
+React JS Library for Creating UI
+React.Dev page 
+Component is Individual Interface on screen 
+
+Component is like a Function 
+reusable 
+We render Component means Display 
+
+Components Form Hirarchy
+
+in react all code is written in JSX
+in JS -> write HTML ->JSX
+

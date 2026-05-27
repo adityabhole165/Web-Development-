@@ -1,0 +1,12 @@
+Changing todo
+
+implement Done task feature to the todod 
+
+todo :{
+    task:
+        id:
+            is Done = False initially 
+}
+
+when mark is done then on that task add 
+Line through 

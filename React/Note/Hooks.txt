@@ -1,0 +1,8 @@
+Hooks-
+Hooks were a new addition in React 16.8
+Thet let you use state and other React Features without writing a class
+
+functional components - Hooks 
+total 15 hooks
+
+useState is major one used 

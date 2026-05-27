@@ -1,0 +1,40 @@
+.Ticket {
+  border: 1px solid #ffc0cb;
+  border-radius: 14px;
+  width: 350px;
+  height: 150px;
+  margin: 2rem auto;   /* <-- this centers the box horizontally */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: #0b0104;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* .Ticket {
+  border: 1px solid #ffc0cb;
+  border-radius: 14px;
+  width: 350px;
+  height: 150px;
+    margin-top: 2rem;
+    margin: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* optional visual improvements */
+  /* background: #0b0104; */
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} */ 
+/* .Ticket{
+     border: 1px solid #ffc0cb;
+     border-radius: 14px;
+     width: 350px;
+     height: 500px;
+     margin-top: 2rem;
+} */

@@ -1,0 +1,16 @@
+node_modules - Node dependency
+public - images 
+src - main important major logic
+src/assets - images
+src/App.css
+src/App.jsx - its a component,count set , reutrns div and its exporting 
+src/index.css
+src/main.jsx - Imported some things, acess root element and render APP component 
+index.html - main page which displayed in browser
+
+
+flow -
+index.html has root component -> create main .jsx it renders root component to browser <-App.jsx component 
+
+
+main files are index.html, main.jsx, App.jsx

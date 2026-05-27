@@ -1,0 +1,2 @@
+State in React -
+The state is a built-in React Object that to contain data or information about the component . A componenet's state can change over time; whenever it changes, the componenet re-renders.

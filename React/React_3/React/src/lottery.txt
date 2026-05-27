@@ -1,0 +1,74 @@
+Lottery 
+We are given Lottery tickets with a 3 digit number.
+The number is generated randomly
+If the sum of all digits is 15 , we win the lottery and get the price
+
+Changes to lottery
+Make the lottery tickets of n digit numberThe winning sum could be any feasible number.
+
+Components
+
+App -> Lottery -> Ticket 
+
+ticket - ticket num1
+        ticket num2   
+        ticket num3   
+        ticket num4
+
+State - Ticket
+
+first Hirarchy -
+App -> lottery
+
+ 
+ Design Pattern   
+
+ Lifting state up  -> sendig state to upper leveles to complete requirements 
+
+
+ Components Types -
+    we using functional Components
+    Logical Components(Smart, has State variables , change state , state logic  ) and Presentational Components(dumb,ui, no state)
+
+App 
+|
+Lottery (Logical)  ticket[] - [1,2,3]
+|
+Ticket (Presentational) this take ticket as props and display it
+|
+Ticket name    tN     TN (presentational)
+this also take as aprop and use it 
+
+
+while Designing Consider and 
+Components
+props , state and Events
+
+
+Ticket Components
+Prop : num
+State: none
+Events : none
+
+Ticket
+Props: ticket[] of size n
+State: none
+Events: none
+
+
+Lowest level Components first 
+
+
+Lottery Components
+Lottery 
+props : n, winningSum
+State: ticket[]
+Events: buyTicket()
+
+
+Function as Props
+Js functions are 1 st class Objects 
+This means they can be passed to a function as argument, returned from it and assigned to a variable 
+
+
+in Prop we can pass - String , num, arrays, objects 

@@ -1,0 +1,24 @@
+Call back in Updater function
+How to change state when it depends on the current value 
+
+new state value depend on old state 
+
+we update using call back 
+
+setCount is asyncronus function
+
+
+case 2 -
+new State value not depends on old value 
+normal flow 
+
+
+
+callback meas updation write in function value
+
+eg setCount(count+1) instead of this 
+use this
+
+setCount((currCount) =>{
+   reutrn currCount+1
+});

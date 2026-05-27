@@ -1,0 +1,26 @@
+Re-render: How it works?
+
+export default functio Counter () {
+    let [count,setCount] =useState(0);
+    console.log("Component is re-executed");
+    console.log(`count= ${count}`);
+
+    let inCOunt = () =>{
+        setCount(count+1);
+        console.log(`new value of count = ${count}`);
+        
+    };
+
+    return(
+        <div>
+            <p>Count={count}</p>
+            <button omClick={inCount}>Increase button</button>
+        </div>
+    );
+
+}
+
+
+UseState statment runs only one time it not re render
+
+son in above code count value change only after re-renders 

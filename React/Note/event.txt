@@ -1,0 +1,6 @@
+Events in React 
+
+CLick Event Example is Button.jsx 
+On click it prints msg in console 
+
+Handling Non CLick Events 

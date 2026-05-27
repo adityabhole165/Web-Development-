@@ -1,0 +1,36 @@
+Forms in React
+THe standard way with Forms is to use Controlled Componenets 
+SO we make React State to be the "Single Source of truth "
+
+
+Every Form copmopnet has there own states to manage the things 
+and as a developer we have to control this 
+ 
+
+we check values using react states
+
+An input form element whose value is controlled by React in this way is Called a "Controlled Component"
+
+in form 
+input changge -> onchange -> handle Name change -> setFullName\
+
+internally all methods get called 
+
+
+FORM LABLES _
+use Html For
+ 
+
+Handling Multiple Inputs -
+    We create a common handleinputChange() for all elements
+
+    event.target.name  - changed Field
+    event.target.value  - new value of the field
+
+useEffect() -
+    The Effect hook lets you perform side effects in function Componenets
+
+    Data feching, setting up a subscription , and mannually changing the DOM in React componenets are all example of side effects   
+
+UseCases of UseEffect -  API CALLS - Asyncronous Operations 
+

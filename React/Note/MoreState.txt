@@ -1,0 +1,14 @@
+component rerenders when state changes 
+
+import {useState} from "react;
+
+function init(){
+    console.log("init was execute")
+}
+
+export default function Counter(){
+    let[count , setCount ] = use state (init())
+    console.log("component was rendered");
+}
+
+

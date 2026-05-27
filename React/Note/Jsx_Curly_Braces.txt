@@ -1,0 +1,7 @@
+function Title(){
+    return <p>2 * 2 = {2*2}</p>
+}
+function Title(){
+    let msg = "Hello World;
+    return <p>Message says {msg}</p>
+}

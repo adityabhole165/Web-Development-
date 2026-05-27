@@ -1,0 +1,23 @@
+Our first Component 
+Component is a reusable and independent piece of code
+
+Creating a Component 
+
+function Title(){
+    return (
+        <h1> Hello World </h1>
+    );
+}
+
+APP comopnent embdded with others which renders all to browser
+
+Rendering a Component
+<Title></Title>
+<Title/>
+
+if we want to return multiple components then we can use div 
+
+
+Every Component is Written is Seperate File not in jsx
+
+To access the Component in other file We need to Export Component From the That File  AND in APP.jsx we import that file 

@@ -1,0 +1,11 @@
+Breakdown a website into Components 
+which ui become component 
+build small one first and then combine 
+
+
+SO we combine 
+small component example Product Title and Discription is a small component
+and 
+To make Product list we have to combine this multiple component  in to under single component  which is ProductTab 
+
+this is called structuring 

@@ -1,0 +1,16 @@
+React Fragment 
+Fragments let you group a list of chidren without adding extra nodes to dom
+
+Div Created Extra Node 
+
+ TO Avoid Extra nodes
+ use this 
+ function APP(){
+    return (
+        <>
+        <Title/>
+        <Title/>
+        <Title/>
+        </>
+    )
+ }

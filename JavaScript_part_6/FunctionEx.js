@@ -1,12 +1,12 @@
-function hellO(){
+function greet(){
     console.log("hello");
 }
 
-hellO();
+greet();
 // Call Multiple times
-hellO();
-hellO();
-hellO();
+greet();
+greet();
+greet();
 
 function PrintName() {
     console.log("My name is Aditye");

@@ -1,0 +1,8 @@
+JSX:
+JavaScript Extention Syntx
+It lets us write HTML Directly inside js 
+
+bable jsx converts to pure JS
+
+JSX-> babel -> JS
+
